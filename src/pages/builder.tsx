@@ -82,7 +82,7 @@ export default function BuildPage() {
                     >
                       <option value='general'>general</option>
                       <option value='gradient'>gradient</option>
-                      <option value='blog'>blog</option>
+                      <option value='shorts'>shorts</option>
                     </SelectInput>
                     <Input id='siteName' label='siteName' />
                     <Input id='description' label='description' />
@@ -99,7 +99,7 @@ export default function BuildPage() {
                     <Input
                       id='banner'
                       label='Banner Links'
-                      helperText='This is only for /blog'
+                      helperText='This is only for /shorts'
                     />
                     <div className='flex gap-2'>
                       <Input

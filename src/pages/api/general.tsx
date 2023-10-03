@@ -27,7 +27,7 @@ export default async function handler(req: NextRequest) {
   const description = searchParams.get('description');
   const theme = searchParams.get('theme');
   const logo = searchParams.get('logo');
-  const templateTitle = searchParams.get('templateTitle');
+  const templateTitle = searchParams.get('templateTi  tle');
   const logoWidth = searchParams.get('logoWidth');
   const logoHeight = searchParams.get('logoHeight');
 

@@ -112,10 +112,10 @@ export default async function handler(req: NextRequest) {
                   style={{ margin: 0 }}
                   tw='font-medium text-[1.6rem] mt-0 text-white'
                 >
-                  Theodorus Clarence
+                  Sarthak S Kumar
                 </p>
                 <p style={{ margin: 0 }} tw='text-xl mt-0 text-gray-300'>
-                  @th_clarence
+                  @sarthakskumar
                 </p>
               </div>
             </div>

@@ -59,7 +59,7 @@ export default async function handler(req: NextRequest) {
       >
         <img
           style={{
-            width: query.logoWidth,
+            width: query.logoWidth, borderRadius: '50%',
             ...(query.logoHeight && { height: query.logoHeight }),
           }}
           src={query.logo}

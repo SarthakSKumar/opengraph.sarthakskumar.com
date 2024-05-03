@@ -37,8 +37,8 @@ export default async function handler(req: NextRequest) {
     theme: theme ?? 'dark',
     logo: logo ?? `${deploymentURL}/images/logo.png`,
     templateTitle,
-    logoWidth: logoWidth ? +logoWidth : 100,
-    logoHeight: logoHeight ? +logoHeight : undefined,
+    logoWidth: logoWidth ? +logoWidth : 250,
+    logoHeight: logoHeight ? +logoHeight : 250,
   };
 
   return new ImageResponse(
@@ -77,7 +77,7 @@ export default async function handler(req: NextRequest) {
             <h1
               tw={clsx(
                 'mt-8',
-                'text-6xl font-bold',
+                'text-7xl font-bold',
                 query.theme === 'dark' ? 'text-white' : 'text-black'
               )}
             >
@@ -85,7 +85,7 @@ export default async function handler(req: NextRequest) {
             </h1>
             <h3
               tw={clsx(
-                'text-2xl font-bold',
+                'text-3xl font-bold',
                 query.theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
               )}
             >
@@ -105,7 +105,7 @@ export default async function handler(req: NextRequest) {
         )}
         <p
           tw={clsx(
-            'text-3xl',
+            'text-3xl font-medium mt-4',
             query.theme === 'dark' ? 'text-gray-300' : 'text-gray-800'
           )}
         >
